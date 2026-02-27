@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpKeep Bicycles | Open Source Bike Part Community</title>
+    <meta
+      name="description"
+      content="UpKeep bicycles is an open source community helping people make bike parts, repair early, and keep bicycles on the road longer."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;700&family=Quicksand:wght@500;700&family=Work+Sans:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="top-nav" aria-label="Main navigation">
+        <a class="logo-link" href="index.html" aria-label="Go to UpKeep home page">
+          <img src="Assets/Logo wit.png" alt="UpKeep bicycles logo">
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-nav-toggle>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+        <div class="nav-menu" data-nav-menu>
+          <a class="nav-link" href="make-a-part.html" data-nav-link>Make a Part</a>
+          <a class="nav-link" href="host-a-workshop.html" data-nav-link>Host a Workshop</a>
+          <a class="nav-link" href="about.html" data-nav-link>About</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home-hero page-shell">
+        <h1 class="home-title">
+          Your bike is not broken
+          <br>
+          It just needs a little <span class="accent">care</span>
+        </h1>
+        <div class="home-bike-stage">
+          <img class="home-bike" src="Assets/bike_without_background.png" alt="Bicycle ready for UpKeep part upgrades">
+          <div class="star-cluster" aria-hidden="true">
+            <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span
+            ><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span
+            ><span class="star"></span><span class="star"></span>
+          </div>
+          <div class="bike-hotspot-list" aria-label="Bike parts links">
+            <div class="bike-hotspot" style="top: 17%; left: 64%;">
+              <a href="parts/handlebars.html">Handlebars</a>
+            </div>
+            <div class="bike-hotspot" style="top: 18%; left: 40%;">
+              <a href="parts/saddle.html">Saddle</a>
+            </div>
+            <div class="bike-hotspot" style="top: 38%; left: 23%;">
+              <a href="parts/rack.html">Rack</a>
+            </div>
+            <div class="bike-hotspot" style="top: 54%; left: 20%;">
+              <a href="parts/fender.html">Fender</a>
+            </div>
+            <div class="bike-hotspot" style="top: 58%; left: 46%;">
+              <a href="parts/chain-guard.html">Chain Guard</a>
+            </div>
+            <div class="bike-hotspot" style="top: 42%; left: 78%;">
+              <a href="parts/lights.html">Lights</a>
+            </div>
+            <div class="bike-hotspot" style="top: 72%; left: 55%;">
+              <a href="parts/pedals.html">Pedals</a>
+            </div>
+          </div>
+        </div>
+        <p class="hero-tagline">Every bike deserves a longer life</p>
+      </section>
+
+      <section class="section">
+        <div class="page-shell">
+          <p class="eyebrow">The Problem</p>
+          <h2 class="section-title">Bikes Are Scrapped Long Before They Truly Fail</h2>
+          <p class="section-subtitle">
+            Small signs of neglect build up until a perfectly repairable bike starts to feel worthless. UpKeep focuses
+            on the parts that shape everyday dignity, safety, and desire to keep riding.
+          </p>
+          <div class="problem-grid">
+            <article class="problem-stat">
+              <strong>160,000</strong>
+              <p>Bikes turned into scrap each year that often need only manageable part repairs.</p>
+            </article>
+            <article class="problem-stat">
+              <strong>150,000</strong>
+              <p>Additional bikes sit neglected because comfort, looks, and utility parts are worn out.</p>
+            </article>
+            <article class="problem-stat">
+              <strong>1 shift</strong>
+              <p>From replacing whole bikes to upgrading key parts while the bike still works.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="page-shell">
+          <p class="eyebrow">Choose Your Path</p>
+          <h2 class="section-title">Make a Part or Host a Workshop</h2>
+          <div class="dual-action">
+            <article class="card action-card">
+              <img src="Assets/stock/workshop-mechanic.jpg" alt="Mechanic and rider shaping bike parts in a workshop">
+              <h3>Make a Part</h3>
+              <p>
+                Bring your bike, choose the part you want to build, and get guided support from local makers in the
+                UpKeep network.
+              </p>
+              <div class="cta-row">
+                <a class="btn btn-primary" href="make-a-part.html">Start Making</a>
+              </div>
+            </article>
+            <article class="card action-card">
+              <img src="Assets/stock/workshop-showroom.jpg" alt="Bicycle workshop setup with tools and benches">
+              <h3>Host a Workshop</h3>
+              <p>
+                Use open source files, workshop playbooks, and community resources to host public sessions and teach
+                people to keep bikes alive longer.
+              </p>
+              <div class="cta-row">
+                <a class="btn btn-secondary" href="host-a-workshop.html">Host with UpKeep</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="page-shell">
+          <p class="eyebrow">How UpKeep Works</p>
+          <h2 class="section-title">Local Workshops + Open Files + Shared Knowledge</h2>
+          <ol class="steps">
+            <li>
+              <strong>1. Find a local workshop</strong>
+              Choose a nearby UpKeep workshop and pick the part you want to make.
+            </li>
+            <li>
+              <strong>2. Build with support</strong>
+              Use open templates and practical coaching to fabricate and fit your part.
+            </li>
+            <li>
+              <strong>3. Ride and refine</strong>
+              Test your part, share feedback, and keep improving designs with the community.
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="page-shell">
+          <p class="eyebrow">Parts Library</p>
+          <h2 class="section-title">These are the parts you can make yourself</h2>
+          <div id="parts-preview-grid" class="parts-grid"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="page-shell">
+          <p class="eyebrow">Workshop Preview</p>
+          <h2 class="section-title">Active spaces in the UpKeep network</h2>
+          <div id="workshop-preview-grid" class="workshop-preview-grid"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="page-shell">
+          <div class="banner-cta">
+            <span class="sticker">Open Source Bicycle Care</span>
+            <h2 class="section-title">Join the community of riders who care</h2>
+            <p class="section-subtitle">
+              Come make a part for yourself, support a workshop, and help shift bicycle culture from disposal to
+              stewardship.
+            </p>
+            <div class="cta-row" style="justify-content: center;">
+              <a class="btn btn-primary" href="make-a-part.html">Make a Part</a>
+              <a class="btn btn-secondary" href="host-a-workshop.html">Host a Workshop</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-note">
+      UpKeep bicycles is a community initiative for longer bike life.
+    </footer>
+
+    <script type="module" src="scripts/nav.js"></script>
+    <script type="module" src="scripts/home.js"></script>
+  </body>
+</html>

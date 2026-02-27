@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Part | UpKeep Bicycles</title>
+    <meta
+      name="description"
+      content="Explore the UpKeep parts library, click bike components, and find nearby workshops where you can fabricate your own part."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;700&family=Quicksand:wght@500;700&family=Work+Sans:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles/main.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    >
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="top-nav" aria-label="Main navigation">
+        <a class="logo-link" href="index.html" aria-label="Go to UpKeep home page">
+          <img src="Assets/Logo wit.png" alt="UpKeep bicycles logo">
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-nav-toggle>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+        <div class="nav-menu" data-nav-menu>
+          <a class="nav-link" href="make-a-part.html" data-nav-link>Make a Part</a>
+          <a class="nav-link" href="host-a-workshop.html" data-nav-link>Host a Workshop</a>
+          <a class="nav-link" href="about.html" data-nav-link>About</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero page-shell">
+        <p class="eyebrow">Make a Part</p>
+        <h1 class="section-title">Build the parts that keep your bike loved and useful</h1>
+        <p>
+          At UpKeep bicycles we focus on the parts that make your bike nicer to use and nicer to see. Pick a part,
+          join a local workshop, and build it with open source files and community support.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="page-shell">
+          <p class="eyebrow">Workshop Mood</p>
+          <h2 class="section-title">Pop-up sessions, shared tools, practical wins</h2>
+          <div class="slideshow-strip">
+            <figure>
+              <img src="Assets/stock/workshop-handlebar.jpg" alt="Person fitting bike handlebars in a workshop">
+              <figcaption>Quick fitting sessions for everyday comfort upgrades.</figcaption>
+            </figure>
+            <figure>
+              <img src="Assets/stock/workshop-wall.jpg" alt="Workshop wall with organized bicycle tools">
+              <figcaption>Open file templates and shared tool stations.</figcaption>
+            </figure>
+            <figure>
+              <img src="Assets/stock/workshop-wheel.jpg" alt="Mechanic tuning a bicycle wheel">
+              <figcaption>Guided build checks before your ride home.</figcaption>
+            </figure>
+            <figure>
+              <img src="Assets/stock/workshop-showroom.jpg" alt="Bicycle workshop with several bikes">
+              <figcaption>Community spaces where riders learn from each other.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="page-shell">
+          <p class="eyebrow">Parts Library</p>
+          <h2 class="section-title">Click a part to open its making page</h2>
+          <div class="diagram-shell dot-bg" data-part-diagram>
+            <div class="bike-diagram">
+              <img src="Assets/Bike vector.svg" alt="Bike diagram with parts to choose from">
+              <svg class="connector-layer" aria-hidden="true"></svg>
+              <div class="part-labels"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="page-shell">
+          <p class="eyebrow">Find a Workshop Near You</p>
+          <h2 class="section-title">Explore fictional sample locations on a real map</h2>
+          <p class="section-subtitle">
+            This first static version uses editable fictional workshop markers in the Netherlands so the experience can
+            be tested before real partner locations are published.
+          </p>
+          <div class="map-grid">
+            <div id="make-part-map" class="map-panel" role="region" aria-label="Workshop map"></div>
+            <aside class="map-detail-card">
+              <div id="make-part-workshop-list" class="workshop-selector" aria-label="Select a workshop"></div>
+              <h3 id="preview-workshop-name">Workshop name</h3>
+              <p id="preview-workshop-city" class="meta">City</p>
+              <p id="preview-workshop-address" class="meta">Address</p>
+              <img id="preview-workshop-image" src="Assets/stock/workshop-wall.jpg" alt="Workshop preview">
+              <p id="preview-workshop-description" class="meta"></p>
+              <div id="preview-workshop-tags" class="chip-list"></div>
+              <a id="preview-workshop-link" class="small-link" href="#" target="_blank" rel="noreferrer">Visit workshop page</a>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="page-shell">
+          <p class="eyebrow">Stories</p>
+          <h2 class="section-title">People extending bike life with UpKeep</h2>
+          <div class="stories-grid">
+            <article class="quote-card">
+              <blockquote>
+                "I made a new chain guard in one evening. My bike suddenly felt cared for again and I started using it
+                every day."
+              </blockquote>
+              <cite>Samira, Utrecht</cite>
+            </article>
+            <article class="quote-card">
+              <blockquote>
+                "Our workshop used the open files for racks and lights. New riders left with bikes that felt practical
+                and personal."
+              </blockquote>
+              <cite>Jeroen, Rotterdam</cite>
+            </article>
+            <article class="quote-card">
+              <blockquote>
+                "Making pedals and a saddle gave me confidence. I used to delay every repair. Now I fix things early."
+              </blockquote>
+              <cite>Nina, Groningen</cite>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-note">
+      UpKeep bicycles is a community initiative for longer bike life.
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script type="module" src="scripts/nav.js"></script>
+    <script type="module" src="scripts/make-a-part.js"></script>
+  </body>
+</html>

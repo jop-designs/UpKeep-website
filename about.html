@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About UpKeep Bicycles</title>
+    <meta
+      name="description"
+      content="UpKeep bicycles is an open source community reframing bike maintenance through shared workshops and practical DIY part making."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;700&family=Quicksand:wght@500;700&family=Work+Sans:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="top-nav" aria-label="Main navigation">
+        <a class="logo-link" href="index.html" aria-label="Go to UpKeep home page">
+          <img src="Assets/Logo wit.png" alt="UpKeep bicycles logo">
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-nav-toggle>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+        <div class="nav-menu" data-nav-menu>
+          <a class="nav-link" href="make-a-part.html" data-nav-link>Make a Part</a>
+          <a class="nav-link" href="host-a-workshop.html" data-nav-link>Host a Workshop</a>
+          <a class="nav-link" href="about.html" data-nav-link>About</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero page-shell">
+        <p class="eyebrow">About UpKeep</p>
+        <h1 class="section-title">A cultural shift in how we value bikes</h1>
+        <p>
+          UpKeep bicycles is an open source community for people who want longer bike life. We focus on parts that are
+          often ignored until the whole bike feels degraded. Instead of waiting for breakdown, we fix value early.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="page-shell content-columns">
+          <article class="card">
+            <h3>What UpKeep is</h3>
+            <p>
+              A shared library of practical bicycle part designs and workshop methods. Not step-by-step repair manuals,
+              but adaptable files and local support to help people make meaningful upgrades.
+            </p>
+          </article>
+          <article class="card">
+            <h3>What UpKeep is not</h3>
+            <p>
+              We are not trying to replace bike mechanics or overcomplicate maintenance. We focus on approachable parts
+              that influence comfort, aesthetics, and emotional connection to a bike.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="page-shell">
+          <p class="eyebrow">Part Focus</p>
+          <h2 class="section-title">Why these seven parts</h2>
+          <div class="resource-grid">
+            <article class="card"><h3>Saddle</h3><p>Comfort and daily ride willingness.</p></article>
+            <article class="card"><h3>Handlebars</h3><p>Control, posture, and confidence.</p></article>
+            <article class="card"><h3>Chain Guard</h3><p>Cleanliness and practicality.</p></article>
+            <article class="card"><h3>Fender</h3><p>Weather resilience and reliability.</p></article>
+            <article class="card"><h3>Lights</h3><p>Safety and visibility.</p></article>
+            <article class="card"><h3>Pedals</h3><p>Stability and ride feel.</p></article>
+            <article class="card"><h3>Rack</h3><p>Daily utility and carrying power.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="page-shell banner-cta">
+          <span class="sticker">Open Community</span>
+          <h2 class="section-title">Keep bikes useful, visible, and worth caring for</h2>
+          <p class="section-subtitle">
+            Build a part. Share improvements. Host a workshop. Every small upgrade helps keep another bike in use.
+          </p>
+          <div class="cta-row" style="justify-content: center;">
+            <a class="btn btn-primary" href="make-a-part.html">Explore parts</a>
+            <a class="btn btn-secondary" href="host-a-workshop.html">Host with us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-note">
+      UpKeep bicycles is a community initiative for longer bike life.
+    </footer>
+
+    <script type="module" src="scripts/nav.js"></script>
+  </body>
+</html>

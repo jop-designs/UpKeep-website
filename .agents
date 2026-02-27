@@ -1,0 +1,11 @@
+# UpKeep Agent Manifest
+
+This repository includes the following agent notes:
+
+- `.agent/agents.md`: consolidated instruction log and constraints.
+- `.agent/planning.md`: execution plan breakdown and status tracking.
+- `.agent/notes.md`: implementation notes, decisions, and verification notes.
+- `.agent/initial_implementation_plan.md`: full initial implementation plan provided by user.
+
+Primary implementation target:
+- Static multi-page UpKeep website with interactive part pages, Leaflet workshop maps, and Playwright smoke+visual tests.
