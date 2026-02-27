@@ -28,8 +28,12 @@ body {
   margin: 0;
   min-height: 100vh;
   color: var(--color-ink);
-  background: radial-gradient(circle at 95% 3%, rgba(230, 142, 19, 0.15), transparent 36%),
-    radial-gradient(circle at 10% 88%, rgba(39, 112, 66, 0.12), transparent 32%), var(--color-cream);
+  background-color: var(--color-cream);
+  background-image:
+    radial-gradient(#d3ccb5 2px, transparent 2px),
+    radial-gradient(circle at 95% 3%, rgba(230, 142, 19, 0.15), transparent 36%),
+    radial-gradient(circle at 10% 88%, rgba(39, 112, 66, 0.12), transparent 32%);
+  background-size: 32px 32px, 100% 100%, 100% 100%;
   font-family: var(--font-body);
   line-height: 1.65;
 }
