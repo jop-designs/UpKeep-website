@@ -93,6 +93,14 @@ document.addEventListener("DOMContentLoaded", () => {
   setText("part-title", part.heroTitle);
   setText("part-summary", part.summary);
   setText("part-why", part.whyItMatters);
+  const partPhoto = document.getElementById("part-photo");
+  if (partPhoto) {
+    partPhoto.src = `../${part.photo}`;
+    partPhoto.alt = `${part.name} detail photo`;
+    if (part.photoPosition) {
+      partPhoto.style.objectPosition = part.photoPosition;
+    }
+  }
   renderSteps(part);
   renderFileLinks(part);
 

@@ -25,3 +25,15 @@ Photographer: Suhael Farouk
 6. `workshop-bench.jpg`
 Source: https://unsplash.com/photos/1678094583761-acfed21a8ad7  
 Photographer: Anton Savinov
+
+7. `reviewer-samira.jpg`
+Source: https://unsplash.com/photos/1494790108377-be9c29b29330  
+Photographer: Chris Benson
+
+8. `reviewer-jeroen.jpg`
+Source: https://unsplash.com/photos/1500648767791-00dcc994a43e  
+Photographer: LinkedIn Sales Solutions
+
+9. `reviewer-nina.jpg`
+Source: https://unsplash.com/photos/1544005313-94ddf0286df2  
+Photographer: Christopher Campbell

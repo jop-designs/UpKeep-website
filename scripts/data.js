@@ -83,6 +83,8 @@ export const PARTS = [
   {
     slug: "saddle",
     name: "Saddle",
+    photo: "Assets/bike_without_background.png",
+    photoPosition: "38% 27%",
     heroTitle: "Comfort keeps your bike in your life.",
     summary:
       "Build a saddle shell and cover that matches your riding posture, so your bike feels inviting every day.",
@@ -103,6 +105,8 @@ export const PARTS = [
   {
     slug: "handlebars",
     name: "Handlebars",
+    photo: "Assets/bike_without_background.png",
+    photoPosition: "63% 18%",
     heroTitle: "Control and confidence start at your hands.",
     summary:
       "Tune reach, width, and grip geometry with open-source handlebar options for city and utility riding.",
@@ -123,6 +127,8 @@ export const PARTS = [
   {
     slug: "chain-guard",
     name: "Chain Guard",
+    photo: "Assets/bike_without_background.png",
+    photoPosition: "45% 58%",
     heroTitle: "A clean drivetrain keeps bikes in circulation.",
     summary:
       "Create a chain guard that protects clothes, reduces dirt, and keeps the bike feeling cared for.",
@@ -143,6 +149,8 @@ export const PARTS = [
   {
     slug: "fender",
     name: "Fender",
+    photo: "Assets/bike_without_background.png",
+    photoPosition: "20% 50%",
     heroTitle: "Dry rides make daily cycling realistic.",
     summary:
       "Build front and rear fenders sized for your tire width and local weather.",
@@ -163,6 +171,8 @@ export const PARTS = [
   {
     slug: "lights",
     name: "Lights",
+    photo: "Assets/bike_without_background.png",
+    photoPosition: "73% 40%",
     heroTitle: "Visibility is a part you can build too.",
     summary:
       "Use open housings and mounts to upgrade your bike lights while keeping parts serviceable.",
@@ -183,6 +193,8 @@ export const PARTS = [
   {
     slug: "pedals",
     name: "Pedals",
+    photo: "Assets/bike_without_background.png",
+    photoPosition: "47% 66%",
     heroTitle: "Secure footing changes how a bike feels.",
     summary:
       "Prototype pedal bodies and traction surfaces that match your riding style.",
@@ -203,6 +215,8 @@ export const PARTS = [
   {
     slug: "rack",
     name: "Rack",
+    photo: "Assets/bike_without_background.png",
+    photoPosition: "19% 35%",
     heroTitle: "Carrying capacity keeps bikes useful.",
     summary:
       "Make front or rear rack modules for groceries, work gear, and everyday utility.",

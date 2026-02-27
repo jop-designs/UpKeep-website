@@ -56,7 +56,7 @@ p {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: 3000;
   background: linear-gradient(95deg, #2d8d61, #248458);
   border-bottom: 1px solid rgba(255, 255, 255, 0.22);
 }
@@ -264,13 +264,13 @@ main {
 
 .home-bike-stage {
   position: relative;
-  width: min(920px, 95vw);
+  width: min(1220px, 98vw);
   margin: 0 auto;
-  min-height: 420px;
+  min-height: 560px;
 }
 
 .home-bike {
-  width: min(760px, 100%);
+  width: min(1400px, 180%);
   margin: 0 auto;
   object-fit: contain;
 }
@@ -466,6 +466,15 @@ main {
   text-transform: uppercase;
 }
 
+.review-headshot {
+  width: 68px;
+  height: 68px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 2px solid rgba(39, 112, 66, 0.25);
+  margin-bottom: 12px;
+}
+
 .banner-cta {
   border-radius: 24px;
   padding: 34px;
@@ -581,18 +590,28 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   min-width: 116px;
   padding: 9px 12px;
   border-radius: 999px;
-  border: 1px solid rgba(25, 34, 44, 0.2);
-  background: #fff;
-  color: #22303d;
+  border: 1px solid rgba(25, 34, 44, 0.15);
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--color-deep-green);
   font-family: var(--font-subtitle);
   font-weight: 700;
-  font-size: 0.83rem;
+  font-size: 0.78rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.part-chip::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--color-orange);
+  box-shadow: 0 0 0 5px rgba(230, 142, 19, 0.15);
 }
 
 .part-chip:hover {
@@ -727,6 +746,16 @@ main {
   color: var(--color-muted);
 }
 
+.part-photo {
+  width: 100%;
+  height: 220px;
+  border-radius: 14px;
+  object-fit: cover;
+  border: 1px solid rgba(24, 34, 44, 0.14);
+  margin-bottom: 14px;
+  background: #d8dbe0;
+}
+
 .ordered-list {
   margin: 0 0 16px;
   padding-left: 18px;
@@ -830,15 +859,83 @@ main {
 }
 
 .footer-note {
-  padding: 32px 0 44px;
-  text-align: center;
-  color: #64717f;
+  background: linear-gradient(140deg, #123b2a, #1f5d40);
+  color: rgba(255, 255, 255, 0.92);
+  margin-top: 42px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-inner {
+  width: min(1200px, 94vw);
+  margin: 0 auto;
+  padding: 36px 0 30px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1.1fr 1fr 1fr;
+}
+
+.footer-brand img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  color: rgba(255, 255, 255, 0.86);
   font-size: 0.88rem;
+  margin: 0;
+}
+
+.footer-links h3,
+.footer-meta h3 {
+  margin: 0 0 10px;
+  font-family: var(--font-subtitle);
+  color: #f7f4ec;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.footer-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.86rem;
+}
+
+.footer-meta p {
+  margin: 0 0 8px;
+  font-size: 0.84rem;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  width: min(1200px, 94vw);
+  margin: 0 auto;
+  padding: 10px 0 16px;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.76);
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .leaflet-popup-content-wrapper {
   border-radius: 12px;
   font-family: var(--font-body);
+}
+
+.leaflet-pane,
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 500;
 }
 
 @media (max-width: 1024px) {
@@ -895,7 +992,11 @@ main {
   }
 
   .home-bike-stage {
-    min-height: 250px;
+    min-height: 320px;
+  }
+
+  .home-bike {
+    width: min(760px, 170%);
   }
 
   .bike-hotspot-list {
@@ -916,6 +1017,11 @@ main {
 
   .section {
     padding: 50px 0;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    padding: 28px 0 20px;
   }
 
   .diagram-shell {
