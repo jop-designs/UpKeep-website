@@ -1,94 +1,27 @@
 import { PARTS, PART_HOTSPOTS, WORKSHOPS } from "./data.js";
 import { initWorkshopMap } from "./map.js";
 
-function renderPartDiagram() {
-  const diagram = document.querySelector("[data-part-diagram]");
-  if (!diagram) {
+function renderPartPreview() {
+  const grid = document.getElementById("parts-preview-grid");
+  if (!grid) {
     return;
   }
 
-  const labelsContainer = diagram.querySelector(".part-labels");
-  const connectorsSvg = diagram.querySelector(".connector-layer");
-  const connectorBySlug = new Map();
-
+  grid.innerHTML = "";
   PARTS.forEach((part) => {
-    const hotspot = PART_HOTSPOTS[part.slug];
-    if (!hotspot) {
-      return;
-    }
+    const card = document.createElement("a");
+    card.className = "part-tile";
+    card.href = `parts/${part.slug}.html`;
 
-    const point = document.createElement("div");
-    point.className = "part-hotspot";
-    point.style.left = `${hotspot.label.x}%`;
-    point.style.top = `${hotspot.label.y}%`;
+    const title = document.createElement("h3");
+    title.textContent = part.name;
+    const text = document.createElement("p");
+    text.textContent = part.summary;
+    const cta = document.createElement("span");
+    cta.textContent = "Open part page";
 
-    const link = document.createElement("a");
-    link.className = "part-chip";
-    link.href = `parts/${part.slug}.html`;
-    link.textContent = part.name;
-    link.setAttribute("data-part-chip", part.slug);
-    point.appendChild(link);
-    labelsContainer.appendChild(point);
-  });
-
-  const drawConnectors = () => {
-    const bounds = diagram.getBoundingClientRect();
-    const width = Math.max(bounds.width, 1);
-    const height = Math.max(bounds.height, 1);
-    connectorsSvg.setAttribute("viewBox", `0 0 ${width} ${height}`);
-    connectorsSvg.innerHTML = "";
-    connectorBySlug.clear();
-
-    PARTS.forEach((part) => {
-      const hotspot = PART_HOTSPOTS[part.slug];
-      if (!hotspot) {
-        return;
-      }
-
-      const sx = (hotspot.anchor.x / 100) * width;
-      const sy = (hotspot.anchor.y / 100) * height;
-      const ex = (hotspot.label.x / 100) * width;
-      const ey = (hotspot.label.y / 100) * height;
-      const cx = (sx + ex) / 2;
-      const cy = Math.min(sy, ey) - Math.max(26, Math.abs(sx - ex) * 0.05);
-
-      const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      path.setAttribute("class", "connector-path");
-      path.setAttribute("d", `M ${sx} ${sy} Q ${cx} ${cy} ${ex} ${ey}`);
-      connectorsSvg.appendChild(path);
-
-      const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-      dot.setAttribute("class", "connector-dot");
-      dot.setAttribute("cx", `${ex}`);
-      dot.setAttribute("cy", `${ey}`);
-      dot.setAttribute("r", "4.2");
-      connectorsSvg.appendChild(dot);
-
-      connectorBySlug.set(part.slug, path);
-    });
-  };
-
-  drawConnectors();
-  window.addEventListener("resize", drawConnectors);
-
-  labelsContainer.querySelectorAll("[data-part-chip]").forEach((chip) => {
-    const slug = chip.getAttribute("data-part-chip");
-    chip.addEventListener("mouseenter", () => {
-      chip.classList.add("is-active");
-      connectorBySlug.get(slug)?.classList.add("is-highlighted");
-    });
-    chip.addEventListener("mouseleave", () => {
-      chip.classList.remove("is-active");
-      connectorBySlug.get(slug)?.classList.remove("is-highlighted");
-    });
-    chip.addEventListener("focus", () => {
-      chip.classList.add("is-active");
-      connectorBySlug.get(slug)?.classList.add("is-highlighted");
-    });
-    chip.addEventListener("blur", () => {
-      chip.classList.remove("is-active");
-      connectorBySlug.get(slug)?.classList.remove("is-highlighted");
-    });
+    card.append(title, text, cta);
+    grid.appendChild(card);
   });
 }
 
@@ -155,6 +88,6 @@ function initWorkshopPreviewMap() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  renderPartDiagram();
+  renderPartPreview();
   initWorkshopPreviewMap();
 });
