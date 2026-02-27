@@ -89,7 +89,7 @@ function initFooter() {
       <section class="footer-meta">
         <h3>Project Info</h3>
         <p>Community-led, open-source, and workshop-friendly.</p>
-        <p>Email: contact@upkeep-bicycles.org</p>
+        <p>Email: jop.alofs@gmail.com</p>
         <p>Image credits: Unsplash + project assets</p>
       </section>
     </div>
