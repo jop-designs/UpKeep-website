@@ -249,12 +249,12 @@ main {
 
 .home-title {
   margin: 0 auto 30px;
-  max-width: 16ch;
+  max-width: 28ch;
   font-family: var(--font-title);
   font-size: clamp(2.2rem, 5.5vw, 4rem);
   font-weight: 600;
   letter-spacing: 0.02em;
-  line-height: 1.13;
+  line-height: 1.4;
   text-transform: none;
 }
 
@@ -355,7 +355,7 @@ main {
   font-family: var(--font-title);
   font-size: clamp(1.7rem, 3.1vw, 2.5rem);
   margin-bottom: 8px;
-  color: var(--color-deep-green);
+  color: #4caf50;
 }
 
 .dual-action {
