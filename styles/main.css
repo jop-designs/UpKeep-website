@@ -132,6 +132,31 @@ main {
   padding: 64px 0;
 }
 
+.section-video {
+  padding-top: 0;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+  background: var(--color-ink);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .eyebrow {
   display: inline-block;
   margin: 0 0 16px;
@@ -270,7 +295,7 @@ main {
   position: relative;
   width: min(1220px, 98vw);
   margin: 0 auto;
-  min-height: 560px;
+  min-height: 450px;
 }
 
 .home-bike {
@@ -335,7 +360,7 @@ main {
 }
 
 .hero-tagline {
-  margin-top: 26px;
+  margin-top: 12px;
   color: #556170;
   font-size: clamp(1rem, 2.4vw, 2.2rem);
 }
