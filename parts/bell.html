@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bell | UpKeep Bicycles</title>
+    <meta name="description" content="Open source bell part information and workshop map for UpKeep bicycles.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;700&family=Quicksand:wght@500;700&family=Work+Sans:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+</head>
+
+<body data-part-slug="bell">
+    <header class="site-header">
+        <nav class="top-nav" aria-label="Main navigation">
+            <a class="logo-link" href="../index.html" aria-label="Go to UpKeep home page">
+                <img src="../Assets/Logo wit.png" alt="UpKeep bicycles logo">
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-nav-toggle>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M4 7h16M4 12h16M4 17h16" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="nav-menu" data-nav-menu>
+                <a class="nav-link" href="../make-a-part.html" data-nav-link>Make a Part</a>
+                <a class="nav-link" href="../host-a-workshop.html" data-nav-link>Host a Workshop</a>
+                <a class="nav-link" href="../about.html" data-nav-link>About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="part-hero page-shell">
+            <p class="eyebrow">Make a Part</p>
+            <h1 id="part-name" class="section-title">Bell</h1>
+            <p id="part-title" class="section-subtitle"></p>
+            <a class="small-link" href="../make-a-part.html">Back to all parts</a>
+        </section>
+
+        <section class="section" style="padding-top: 18px;">
+            <div class="page-shell part-layout">
+                <article class="part-content-card">
+                    <h2>What this part changes</h2>
+                    <img id="part-photo" class="part-photo" src="../Assets/bike_without_background.png"
+                        alt="Part detail photo">
+                    <p id="part-summary"></p>
+
+                    <h3>Why it matters</h3>
+                    <p id="part-why"></p>
+
+                    <h3>How and where to get this made</h3>
+                    <p>
+                        Choose a workshop location on the map to see where this part can be made, who can support your
+                        build,
+                        and what the space looks like.
+                    </p>
+
+                    <h3>Build process</h3>
+                    <ol id="part-steps" class="ordered-list"></ol>
+
+                    <h3>Open files in this part pack</h3>
+                    <ul id="part-files" class="file-list"></ul>
+                </article>
+
+                <article class="part-workshop-card">
+                    <div id="part-workshop-list" class="workshop-selector" aria-label="Workshops"></div>
+                    <div id="part-map" class="map-panel" role="region" aria-label="Workshop locations map"></div>
+                    <div class="workshop-card">
+                        <h3 id="workshop-name">Workshop name</h3>
+                        <p id="workshop-city"></p>
+                        <p id="workshop-address"></p>
+                        <img id="workshop-image" src="../Assets/stock/workshop-wall.jpg" alt="Workshop photo">
+                        <p id="workshop-description"></p>
+                        <div id="workshop-specialties" class="chip-list"></div>
+                        <a id="workshop-link" class="small-link" href="#" target="_blank" rel="noreferrer">Visit
+                            workshop page</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-note">
+        UpKeep bicycles is a community initiative for longer bike life.
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script type="module" src="../scripts/nav.js"></script>
+    <script type="module" src="../scripts/part-page.js"></script>
+</body>
+
+</html>

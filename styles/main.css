@@ -338,7 +338,7 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: var(--color-deep-green);
+  color: #000;
   font-family: var(--font-subtitle);
   font-weight: 700;
   font-size: 0.78rem;
@@ -346,17 +346,15 @@ main {
   letter-spacing: 0.07em;
   padding: 8px 12px;
   border-radius: var(--radius-pill);
-  border: 1px solid rgba(25, 34, 44, 0.15);
+  border: 2px solid var(--color-orange);
   background: rgba(255, 255, 255, 0.86);
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
-.bike-hotspot a::before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  border-radius: 999px;
-  background: var(--color-orange);
-  box-shadow: 0 0 0 5px rgba(230, 142, 19, 0.15);
+.bike-hotspot a:hover {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  transform: scale(1.05);
 }
 
 .hero-tagline {

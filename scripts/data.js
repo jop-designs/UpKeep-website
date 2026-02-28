@@ -8,7 +8,7 @@ export const WORKSHOPS = [
     address: "Asterweg 23, 1031 HM Amsterdam",
     website: "https://example.org/noord-frame-lab",
     image: "Assets/stock/workshop-wall.jpg",
-    specialties: ["fender", "rack", "lights", "chain-guard"],
+    specialties: ["fender", "rack", "lights", "chain-guard", "bell"],
     description:
       "A makerspace focused on laser-cut templates and quick-fit utility parts for daily city bikes."
   },
@@ -21,7 +21,7 @@ export const WORKSHOPS = [
     address: "Veilinghavenkade 105, 3521 AT Utrecht",
     website: "https://example.org/canal-yard-cycles",
     image: "Assets/stock/workshop-bench.jpg",
-    specialties: ["saddle", "handlebars", "pedals"],
+    specialties: ["saddle", "handlebars", "pedals", "bell"],
     description:
       "Community workshop sessions where riders prototype ergonomic upgrades with on-site mentors."
   },
@@ -34,7 +34,7 @@ export const WORKSHOPS = [
     address: "Katendrechtse Lagedijk 412, 3082 GR Rotterdam",
     website: "https://example.org/dockside-bicycle-commons",
     image: "Assets/stock/workshop-wheel.jpg",
-    specialties: ["rack", "fender", "lights", "pedals"],
+    specialties: ["rack", "fender", "lights", "pedals", "bell"],
     description:
       "Known for durable all-weather commuter parts built from recycled aluminum and reclaimed plastics."
   },
@@ -73,7 +73,7 @@ export const WORKSHOPS = [
     address: "Saturnusstraat 59, 2516 AG Den Haag",
     website: "https://example.org/harborline-open-bike-studio",
     image: "Assets/stock/workshop-showroom.jpg",
-    specialties: ["rack", "lights", "handlebars", "saddle"],
+    specialties: ["rack", "lights", "handlebars", "saddle", "bell"],
     description:
       "Weekly open benches for riders who want cleaner cable routing, better lighting, and stronger carrying setups."
   }
@@ -100,6 +100,28 @@ export const PARTS = [
     fileDownloads: [
       { title: "Saddle Base DXF", href: "#" },
       { title: "Cover Stitch Pattern PDF", href: "#" }
+    ]
+  },
+  {
+    slug: "bell",
+    name: "Bell",
+    photo: "Assets/bike_without_background.png",
+    photoPosition: "60% 20%",
+    heroTitle: "Make yourself heard with a beautiful tone.",
+    summary:
+      "Craft a custom bell dome and striker for a clear, resonant ring that alerts others without startling them.",
+    whyItMatters:
+      "A working bell is legally required in many places and crucial for safety, but stock bells often break or sound harsh.",
+    workshops: ["ams-north", "utrecht-yard", "rdam-docks", "hague-harbor"],
+    makeSteps: [
+      "Select a dome shape and material (brass, steel, or aluminum).",
+      "Cut and form the striker spring from template files.",
+      "Assemble on the mounting bracket and test the resonance.",
+      "Adjust the striker distance for the clearest ring."
+    ],
+    fileDownloads: [
+      { title: "Bell Dome Templates DXF", href: "#" },
+      { title: "Striker assembly STL", href: "#" }
     ]
   },
   {
@@ -243,5 +265,6 @@ export const PART_HOTSPOTS = {
   fender: { anchor: { x: 26, y: 49 }, label: { x: 14, y: 51 } },
   "chain-guard": { anchor: { x: 49, y: 54 }, label: { x: 18, y: 69 } },
   lights: { anchor: { x: 76, y: 38 }, label: { x: 87, y: 45 } },
-  pedals: { anchor: { x: 51, y: 62 }, label: { x: 87, y: 72 } }
+  pedals: { anchor: { x: 51, y: 62 }, label: { x: 87, y: 72 } },
+  bell: { anchor: { x: 62, y: 22 }, label: { x: 20, y: 5 } }
 };
