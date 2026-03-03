@@ -8,7 +8,7 @@ export const WORKSHOPS = [
     address: "Asterweg 23, 1031 HM Amsterdam",
     website: "https://example.org/noord-frame-lab",
     image: "Assets/stock/workshop-wall.jpg",
-    specialties: ["fender", "rack", "lights", "chain-guard", "bell"],
+    specialties: ["rack", "lights", "chain-guard"],
     description:
       "A makerspace focused on laser-cut templates and quick-fit utility parts for daily city bikes."
   },
@@ -21,7 +21,7 @@ export const WORKSHOPS = [
     address: "Veilinghavenkade 105, 3521 AT Utrecht",
     website: "https://example.org/canal-yard-cycles",
     image: "Assets/stock/workshop-bench.jpg",
-    specialties: ["saddle", "handlebars", "pedals", "bell"],
+    specialties: ["saddle", "handlebars", "pedals"],
     description:
       "Community workshop sessions where riders prototype ergonomic upgrades with on-site mentors."
   },
@@ -34,7 +34,7 @@ export const WORKSHOPS = [
     address: "Katendrechtse Lagedijk 412, 3082 GR Rotterdam",
     website: "https://example.org/dockside-bicycle-commons",
     image: "Assets/stock/workshop-wheel.jpg",
-    specialties: ["rack", "fender", "lights", "pedals", "bell"],
+    specialties: ["rack", "lights", "pedals"],
     description:
       "Known for durable all-weather commuter parts built from recycled aluminum and reclaimed plastics."
   },
@@ -60,7 +60,7 @@ export const WORKSHOPS = [
     address: "Damsterdiep 284, 9713 EE Groningen",
     website: "https://example.org/northern-loop-workshop",
     image: "Assets/stock/workshop-mechanic.jpg",
-    specialties: ["saddle", "pedals", "fender"],
+    specialties: ["saddle", "pedals"],
     description:
       "Small-group evenings where riders test comfort upgrades and ride-feedback iterations."
   },
@@ -73,7 +73,7 @@ export const WORKSHOPS = [
     address: "Saturnusstraat 59, 2516 AG Den Haag",
     website: "https://example.org/harborline-open-bike-studio",
     image: "Assets/stock/workshop-showroom.jpg",
-    specialties: ["rack", "lights", "handlebars", "saddle", "bell"],
+    specialties: ["rack", "lights", "handlebars", "saddle"],
     description:
       "Weekly open benches for riders who want cleaner cable routing, better lighting, and stronger carrying setups."
   }
@@ -111,18 +111,10 @@ export const PARTS = [
     summary:
       "Craft a custom bell dome and striker for a clear, resonant ring that alerts others without startling them.",
     whyItMatters:
-      "A working bell is legally required in many places and crucial for safety, but stock bells often break or sound harsh.",
-    workshops: ["ams-north", "utrecht-yard", "rdam-docks", "hague-harbor"],
-    makeSteps: [
-      "Select a dome shape and material (brass, steel, or aluminum).",
-      "Cut and form the striker spring from template files.",
-      "Assemble on the mounting bracket and test the resonance.",
-      "Adjust the striker distance for the clearest ring."
-    ],
-    fileDownloads: [
-      { title: "Bell Dome Templates DXF", href: "#" },
-      { title: "Striker assembly STL", href: "#" }
-    ]
+      "A working bell is legally required in some places in the world, but we mainly think that it is just the most fun part of a bike.",
+    workshops: [],
+    makeSteps: [],
+    fileDownloads: []
   },
   {
     slug: "handlebars",
@@ -177,18 +169,10 @@ export const PARTS = [
     summary:
       "Build front and rear fenders sized for your tire width and local weather.",
     whyItMatters:
-      "Without fenders, wet rides feel punishing and riders stop using the bike for everyday tasks.",
-    workshops: ["ams-north", "rdam-docks", "groningen-loop"],
-    makeSteps: [
-      "Select tire width profile from the library.",
-      "Cut fender strips and bend to arc with workshop jig.",
-      "Fit struts and check wheel clearance.",
-      "Test through bumps and re-tighten alignment."
-    ],
-    fileDownloads: [
-      { title: "Fender Arc Templates", href: "#" },
-      { title: "Strut Bracket Cut Files", href: "#" }
-    ]
+      "Without a fender driving through the rain is even more unpleasant than it already is. We think that fixing your fender is an easy way to get more enjoyment out of your bicycle.",
+    workshops: [],
+    makeSteps: [],
+    fileDownloads: []
   },
   {
     slug: "lights",

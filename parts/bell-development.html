@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bell Development | UpKeep Bicycles</title>
+    <meta name="description" content="Development updates for the DIY open source bicycle bell.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;700&family=Quicksand:wght@500;700&family=Work+Sans:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="top-nav" aria-label="Main navigation">
+            <a class="logo-link" href="../index.html" aria-label="Go to UpKeep home page">
+                <img src="../Assets/Logo wit.png" alt="UpKeep bicycles logo">
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-nav-toggle>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M4 7h16M4 12h16M4 17h16" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="nav-menu" data-nav-menu>
+                <a class="nav-link" href="../make-a-part.html" data-nav-link>Make a Part</a>
+                <a class="nav-link" href="../host-a-workshop.html" data-nav-link>Host a Workshop</a>
+                <a class="nav-link" href="../about.html" data-nav-link>About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="part-hero page-shell">
+            <p class="eyebrow">Development Updates</p>
+            <h1 class="section-title">Bell</h1>
+            <p class="section-subtitle">Follow along as we iterate on the ultimate open-source bicycle bell.</p>
+            <a class="small-link" href="bell.html">Back to Bell page</a>
+        </section>
+
+        <section class="section" style="padding-top: 18px;">
+            <div class="page-shell">
+                <article class="part-content-card">
+                    <h2>Technical Development Log</h2>
+                    <p class="subtitle"
+                        style="color: #666; font-size: 0.9rem; margin-top: -0.5rem; margin-bottom: 1.5rem;">February 10,
+                        2026</p>
+
+                    <h3>Initial Prototyping</h3>
+                    <p>
+                        The making process of the bell started from a pleasurable metaphor: kids playing with sand
+                        moulds to turn sand into different shapes. We aimed to make a metal bell using industrial
+                        production methods (pressing sheet metal) but accessible for DIY. Could you press the top of a
+                        bell by just pulling a lever?
+                    </p>
+                    <p>
+                        We started with 3D printed plastic moulds (PETG, gyroid infill) placed underneath a bearing
+                        press. The first test was promising—the PETG mould didn't indent—but the edges of the metal
+                        wrinkled. This initial design had only a slight curve, and a bell needs a more defined shape to
+                        function properly.
+                    </p>
+
+                    <img src="../Assets/A bell made with 3d printed moulds.jpg" alt="A bell made with 3d printed moulds"
+                        style="width: 100%; height: auto; border-radius: 8px; margin: 1.5rem 0;">
+
+                    <h3>Exploring New Shapes and Moulds</h3>
+                    <p>
+                        Through several iterations, we tried multi-step forms and lubricated moulds, but wrinkling
+                        persisted. Experimenting with different shapes, such as a flower-shaped bell, redirected the
+                        buckling edges but still presented challenges. Even after milling an aluminium 'negative' mould,
+                        the edges kept wrinkling.
+                    </p>
+
+                    <img src="../Assets/Exploring different bell shapes.png" alt="Exploring different bell shapes"
+                        style="width: 100%; height: auto; border-radius: 8px; margin: 1.5rem 0;">
+
+                    <h3>Metal Forming Advice</h3>
+                    <p>
+                        Consulting experts on sheet metal forming revealed that crash forming deep convex shapes is
+                        difficult due to pressure points and lack of material control. Techniques like deep drawing and
+                        rubber moulding are better suited but require immense pressure not available in a typical DIY
+                        workshop.
+                    </p>
+
+                    <img src="../Assets/Table bell forming techniques.png" alt="Table bell forming techniques"
+                        style="width: 100%; height: auto; border-radius: 8px; margin: 1.5rem 0;">
+
+                    <p>
+                        Furthermore, metal selection is crucial for acoustic properties. Harder alloys (like high carbon
+                        steel) produce better sound but are much harder to form with non-industrial equipment compared
+                        to softer metals like aluminium.
+                    </p>
+
+                    <h3>Alternative Instruments</h3>
+                    <p>
+                        Because pressing a traditional bell shape proved too demanding for DIY, we looked at alternative
+                        instruments with simpler geometry: pipe bells, triangles, and flutes. The pipe bell and triangle
+                        produce sounds similar to a bike bell and only require cutting a section of existing material.
+                    </p>
+
+                    <img src="../Assets/Triangle, pipe bell and flute.jpg" alt="Triangle, pipe bell and flute"
+                        style="width: 100%; height: auto; border-radius: 8px; margin: 1.5rem 0;">
+
+                    <p>
+                        Our first new prototype was a musical instrument with copper pipes supported at the nodal point.
+                        While sound volume depends heavily on mounting and the striker used, this direction simplifies
+                        the production process significantly, even if it shifts away from the original sand mould
+                        metaphor.
+                    </p>
+
+                    <h3>Conclusion</h3>
+                    <p>
+                        Moulding metal is difficult, but Design-for-DIY sometimes requires changing the product form
+                        itself to make it easier to build. The traditional shape of a bell also limits customization. In
+                        the future, we will continue testing different mounting solutions and striker materials to
+                        optimize the pipe bell approach.
+                    </p>
+
+                    <hr style="margin: 3rem 0; border: 0; border-top: 1px solid #ddd;">
+
+                    <h3>Feedback</h3>
+                    <p>Have ideas for easy-to-form metals or alternative bell shapes? Let us know what you think!</p>
+                    <form style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
+                        <textarea rows="4" placeholder="Leave your feedback here..."
+                            style="padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px; font-family: inherit;"></textarea>
+                        <button type="button"
+                            style="align-self: flex-start; padding: 0.5rem 1rem; background-color: #000; color: #fff; border: none; border-radius: 4px; cursor: pointer;">Submit
+                            Comment</button>
+                    </form>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-note">
+        UpKeep bicycles is a community initiative for longer bike life.
+    </footer>
+
+    <script type="module" src="../scripts/nav.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fender Development | UpKeep Bicycles</title>
+    <meta name="description" content="Development updates for the DIY open source bicycle fender.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;700&family=Quicksand:wght@500;700&family=Work+Sans:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="top-nav" aria-label="Main navigation">
+            <a class="logo-link" href="../index.html" aria-label="Go to UpKeep home page">
+                <img src="../Assets/Logo wit.png" alt="UpKeep bicycles logo">
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-nav-toggle>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M4 7h16M4 12h16M4 17h16" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="nav-menu" data-nav-menu>
+                <a class="nav-link" href="../make-a-part.html" data-nav-link>Make a Part</a>
+                <a class="nav-link" href="../host-a-workshop.html" data-nav-link>Host a Workshop</a>
+                <a class="nav-link" href="../about.html" data-nav-link>About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="part-hero page-shell">
+            <p class="eyebrow">Development Updates</p>
+            <h1 class="section-title">Fender</h1>
+            <p class="section-subtitle">Follow along as we iterate on the ultimate open-source bicycle fender.</p>
+            <a class="small-link" href="fender.html">Back to Fender page</a>
+        </section>
+
+        <section class="section" style="padding-top: 18px;">
+            <div class="page-shell">
+                <article class="part-content-card">
+                    <h2>Technical Development: Rolling the Fender</h2>
+                    <p class="subtitle"
+                        style="color: #666; font-size: 0.9rem; margin-top: -0.5rem; margin-bottom: 1.5rem;">February 14,
+                        2026</p>
+
+                    <p>The fender's development started from a simple question: is it possible to make a mudguard by
+                        hand-cranking a DIY roller bender? My goal was to shape metal strips into functional fenders
+                        without high-tech industrial machinery.</p>
+
+                    <h3>Testing Plywood Rollers</h3>
+                    <img src="../Assets/Fender development/Making and testing plywood rollers.jpg"
+                        alt="Making and testing plywood rollers" class="part-photo"
+                        style="margin-top: 1rem; margin-bottom: 1rem; border-radius: 8px;">
+                    <p>To get a feel for the process, I turned custom profile rollers from laminated plywood on a lathe
+                        and tested them on a workshop machine using aluminum and steel sheets (0.5 to 2 mm). While the
+                        thinner pieces worked, the 2mm strips broke the plywood layers. I learned that plywood isn't
+                        strong enough, 2mm material is too difficult to form, and the metal tends to 'wander' without a
+                        guide.</p>
+
+                    <h3>DIY Machine & Buckling Challenges</h3>
+                    <img src="../Assets/Fender development/Tow different types of roller benders - pinch and pyramid.png"
+                        alt="Two different types of roller benders" class="part-photo"
+                        style="margin-top: 1rem; margin-bottom: 1rem; border-radius: 8px;">
+                    <p>I built a simple machine out of 2x4 lumber and 3D printed (PETG) rollers to see if hand power was
+                        sufficient, switching from a pyramid to a pinch-type configuration. I successfully rolled 0.5 –
+                        1mm aluminum shapes, but encountered persistent 'wrinkling' along the edges.</p>
+                    <img src="../Assets/Fender development/Buckling along the edge of the fender.jpg"
+                        alt="Buckling along the edge of the fender" class="part-photo"
+                        style="margin-top: 1rem; margin-bottom: 1rem; border-radius: 8px;">
+                    <p>This buckling happens because bending the metal into a convex cross-section stretches the top
+                        while compressing the edges. The material inevitably buckled where it was free to move.</p>
+
+                    <h3>Pivoting to Simpler Methods & Plastics</h3>
+                    <img src="../Assets/Fender development/A flat DIY fender made from aluminium.png"
+                        alt="A flat DIY fender" class="part-photo"
+                        style="margin-top: 1rem; margin-bottom: 1rem; border-radius: 8px;">
+                    <p>An expert noted that traditional metal fenders require tremendous force and special edge-folding
+                        tools to prevent buckling. I pivoted to trying the simplest possible shape: a flat, curved piece
+                        of aluminum. It was easy to make but splashed water to the sides, reducing its utility.</p>
+                    <p>To fix this, I explored plastics. I prototyped a fender from a continuous strip of PETG
+                        thermoformed over a wooden mould and heat-welded the joints. Finally, I tested an "airplane
+                        wing" design: a steel rod frame wrapped in a shrinkable PVC battery sleeve. These experiments
+                        proved that while traditional metal rolling is tough in a DIY setting, alternative methods are
+                        just as promising and pleasurable to build!</p>
+
+                    <hr style="margin: 3rem 0; border: none; border-top: 1px solid var(--border-color);">
+
+                    <h3>Leave Feedback</h3>
+                    <p style="margin-bottom: 1rem;">Have ideas for the fender rolling machine or alternative materials?
+                        Let us know!</p>
+                    <form onsubmit="event.preventDefault(); alert('Feedback submitted!'); this.reset();"
+                        style="display: flex; flex-direction: column; gap: 1rem; max-width: 500px;">
+                        <textarea name="comment" rows="4" placeholder="Share your thoughts or ideas..." required
+                            style="padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px; font-family: inherit; resize: vertical;"></textarea>
+                        <button type="submit" class="button" style="align-self: flex-start;">Post Comment</button>
+                    </form>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-note">
+        UpKeep bicycles is a community initiative for longer bike life.
+    </footer>
+
+    <script type="module" src="../scripts/nav.js"></script>
+</body>
+
+</html>

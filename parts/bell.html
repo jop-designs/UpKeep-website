@@ -12,8 +12,6 @@
         href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;700&family=Quicksand:wght@500;700&family=Work+Sans:wght@500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 </head>
 
 <body data-part-slug="bell">
@@ -44,7 +42,7 @@
         </section>
 
         <section class="section" style="padding-top: 18px;">
-            <div class="page-shell part-layout">
+            <div class="page-shell">
                 <article class="part-content-card">
                     <h2>What this part changes</h2>
                     <img id="part-photo" class="part-photo" src="../Assets/bike_without_background.png"
@@ -54,32 +52,55 @@
                     <h3>Why it matters</h3>
                     <p id="part-why"></p>
 
-                    <h3>How and where to get this made</h3>
+                    <h3>Under construction</h3>
                     <p>
-                        Choose a workshop location on the map to see where this part can be made, who can support your
-                        build,
-                        and what the space looks like.
+                        This part is still under development by the community. We are trying to find a way to make
+                        fabricating a bell fun and pleasurable. If you would like to participate and join our
+                        open-source community, please <a href="mailto:jop.alofs@gmail.com">send an email</a>.
                     </p>
-
-                    <h3>Build process</h3>
-                    <ol id="part-steps" class="ordered-list"></ol>
-
-                    <h3>Open files in this part pack</h3>
-                    <ul id="part-files" class="file-list"></ul>
                 </article>
 
-                <article class="part-workshop-card">
-                    <div id="part-workshop-list" class="workshop-selector" aria-label="Workshops"></div>
-                    <div id="part-map" class="map-panel" role="region" aria-label="Workshop locations map"></div>
-                    <div class="workshop-card">
-                        <h3 id="workshop-name">Workshop name</h3>
-                        <p id="workshop-city"></p>
-                        <p id="workshop-address"></p>
-                        <img id="workshop-image" src="../Assets/stock/workshop-wall.jpg" alt="Workshop photo">
-                        <p id="workshop-description"></p>
-                        <div id="workshop-specialties" class="chip-list"></div>
-                        <a id="workshop-link" class="small-link" href="#" target="_blank" rel="noreferrer">Visit
-                            workshop page</a>
+                <a href="bell-development.html" style="text-decoration: none; color: inherit; display: block;"
+                    class="development-link-card">
+                    <article class="part-content-card"
+                        style="margin-top: 2rem; transition: transform 0.2s, box-shadow 0.2s;"
+                        onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'"
+                        onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
+                        <h2>Development Updates</h2>
+                        <p style="margin-bottom: 0.5rem; font-weight: 500;">Latest: The challenges of DIY metal forming
+                            (10-02-2026)</p>
+                        <p>
+                            We started by trying to press sheet metal into a traditional bell shape using 3D printed
+                            moulds. However, the edges wrinkled, and expert advice confirmed that DIY crash-forming is
+                            very difficult for this shape. To keep the project accessible, we are now exploring
+                            alternative geometries like copper pipe bells!
+                        </p>
+                        <span class="small-link" style="display: inline-block; margin-top: 1rem;">Read the full
+                            technical log &rarr;</span>
+                    </article>
+                </a>
+
+                <article class="part-content-card" style="margin-top: 2rem;">
+                    <h2>Existing Designs</h2>
+                    <p>We are not the first to develop a DIY bell. Look at all these great existing designs.</p>
+                    <div class="existing-designs-grid"
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                        <div class="design-card">
+                            <a href="https://blog.thesietch.org/2009/03/22/i-made-a-bicycle-bell/" target="_blank"
+                                style="text-decoration: none; color: inherit;">
+                                <img src="../Assets/DIY bicycle bell 1.jpg" alt="DIY bicycle bell by The Naib"
+                                    style="width: 100%; height: auto; border-radius: 8px;">
+                                <p style="margin-top: 0.5rem; font-weight: 500;">Maker: The Naib</p>
+                            </a>
+                        </div>
+                        <div class="design-card">
+                            <a href="https://www.youtube.com/watch?v=m6jzFMFOugs" target="_blank"
+                                style="text-decoration: none; color: inherit;">
+                                <img src="../Assets/DIY bicycle bell 2.jpg" alt="DIY bicycle bell by Max Imagination"
+                                    style="width: 100%; height: auto; border-radius: 8px;">
+                                <p style="margin-top: 0.5rem; font-weight: 500;">Maker: Max Imagination</p>
+                            </a>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -90,8 +111,6 @@
         UpKeep bicycles is a community initiative for longer bike life.
     </footer>
 
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script type="module" src="../scripts/nav.js"></script>
     <script type="module" src="../scripts/part-page.js"></script>
 </body>
