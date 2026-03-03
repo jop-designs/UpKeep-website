@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chain Guard Instructions | UpKeep Bicycles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;700&family=Quicksand:wght@500;700&family=Work+Sans:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <style>
+        .instruction-step {
+            margin-bottom: 40px;
+            padding: 32px;
+            background: #fff;
+            border-radius: var(--radius-card);
+            border: 1px solid rgba(24, 34, 44, 0.12);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .instruction-step h2 {
+            font-family: var(--font-subtitle);
+            color: var(--color-deep-green);
+            margin-top: 0;
+            margin-bottom: 24px;
+            border-bottom: 2px solid rgba(39, 112, 66, 0.15);
+            padding-bottom: 12px;
+            font-size: 1.8rem;
+        }
+
+        .instruction-step h3 {
+            font-family: var(--font-subtitle);
+            color: var(--color-deep-green);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .instruction-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .instruction-images img {
+            width: 100%;
+            height: 100%;
+            max-height: 400px;
+            border-radius: 12px;
+            object-fit: cover;
+            border: 1px solid rgba(24, 34, 44, 0.1);
+        }
+
+        .instruction-images.single-image img {
+            max-height: 500px;
+            aspect-ratio: auto;
+        }
+
+        .instruction-step p:last-child {
+            margin-bottom: 0;
+        }
+
+        .instruction-step ul {
+            margin-bottom: 16px;
+            padding-left: 24px;
+            color: var(--color-ink);
+        }
+
+        .instruction-step li {
+            margin-bottom: 6px;
+        }
+
+        .instruction-images img {
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .instruction-images img:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .image-modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(5px);
+            align-items: center;
+            justify-content: center;
+            cursor: zoom-out;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-modal.is-open {
+            display: flex;
+            opacity: 1;
+        }
+
+        .image-modal img {
+            max-width: 90%;
+            max-height: 90vh;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="top-nav" aria-label="Main navigation">
+            <a class="logo-link" href="../index.html" aria-label="Go to UpKeep home page">
+                <img src="../Assets/Logo wit.png" alt="UpKeep bicycles logo">
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-nav-toggle>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M4 7h16M4 12h16M4 17h16" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="nav-menu" data-nav-menu>
+                <a class="nav-link" href="../make-a-part.html" data-nav-link>Make a Part</a>
+                <a class="nav-link" href="../host-a-workshop.html" data-nav-link>Host a Workshop</a>
+                <a class="nav-link" href="../about.html" data-nav-link>About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="part-hero page-shell">
+            <p class="eyebrow">Instructions</p>
+            <h1 class="section-title">Chain Guard</h1>
+            <p class="section-subtitle">Make your own chain guard step-by-step</p>
+            <a class="small-link" href="chain-guard.html">Back to Chain Guard</a>
+        </section>
+
+        <section class="section" style="padding-top: 18px;">
+            <div class="page-shell">
+
+                <div class="instruction-step">
+                    <h2>Chain guard</h2>
+                    <p>Hi, and welcome! These instructions will guide you step by step through the process of making a
+                        chainguard. The part was designed to be made during a workshop at one of the UpKeep locations.
+                        If you want to build one for yourself with guidance make sure to check this out.</p>
+                    <p>If you have any questions along the way please don't hesitate to send an email.</p>
+                    <p>Let's get started!</p>
+                </div>
+
+                <div class="instruction-step">
+                    <h2>Supplies</h2>
+                    <div class="instruction-images single-image">
+                        <img src="../Assets/Chain%20guard%20instructable/Supplies.jpg" alt="Supplies toolkit">
+                    </div>
+                    <p>At the beginning you will be handed a toolbox. This contains all the tools that you will to make
+                        a chain guard. You will need:</p>
+                    <ul>
+                        <li>A drill</li>
+                        <li>A small drill bit 3 mm</li>
+                        <li>A big drill bit 14 mm</li>
+                        <li>Sheet scissors</li>
+                        <li>A file</li>
+                        <li>A scribe</li>
+                        <li>Allen key 2 sizes</li>
+                        <li>Screw driver</li>
+                        <li>Tape measure</li>
+                    </ul>
+                    <p>You will also need the following supplies:</p>
+                    <ul>
+                        <li>Paper towel</li>
+                        <li>Small screw</li>
+                        <li>Plastic mounting bracket</li>
+                        <li>4 bolts</li>
+                        <li>Washers</li>
+                        <li>A marking jig</li>
+                        <li>Sandpaper</li>
+                    </ul>
+                    <p>But above all, it is really important to have your bike.</p>
+                </div>
+
+                <div class="instruction-step">
+                    <h2>Step 1: Check If the Chainguard Will Fit</h2>
+                    <div class="instruction-images single-image">
+                        <img src="../Assets/Chain%20guard%20instructable/Step%201.jpg" alt="Step 1 visual check">
+                    </div>
+                    <p>There are two things that you need to look out for when checking if the chainguard will fit your
+                        bike:</p>
+                    <ul>
+                        <li>The diameter of the biggest chainring shouldn't be bigger then 19 centimeters and,</li>
+                        <li>There needs to be at least 2 centimeters between the crank and the frame if pull it back.
+                        </li>
+                    </ul>
+                    <p>(see pictures above for more information)</p>
+                    <p>If you have checked this you are ready to start!</p>
+                </div>
+
+                <div class="instruction-step">
+                    <h2>Step 2: Vacuum Forming</h2>
+                    <div class="instruction-images">
+                        <img src="../Assets/Chain%20guard%20instructable/Step%202%20-%201.png" alt="Step 2 part 1">
+                        <img src="../Assets/Chain%20guard%20instructable/Step%202%20-%202.png" alt="Step 2 part 2">
+                        <img src="../Assets/Chain%20guard%20instructable/Step%202%20-%203.png" alt="Step 2 part 3">
+                        <img src="../Assets/Chain%20guard%20instructable/Step%202%20-%204.png" alt="Step 2 part 4">
+                        <img src="../Assets/Chain%20guard%20instructable/Step%202%20-%205.jpg" alt="Step 2 part 5">
+                    </div>
+                    <p>In the first step we will make the shape of the chainguard. Here you have the option to customize
+                        yours by choosing a color and one of the wooden rings to change the design.</p>
+                    <p>Next, we will prepare the mould by covering the top with Vaseline.</p>
+                    <p>If this is done peal away the protective layer from your plastic sheet. You can choose whether
+                        you want a matt or glossy finish by placing the sheet inside the machine with this side facing
+                        up.</p>
+                    <p>Do this step together with an instructor:</p>
+                    <p>Now close the frame and pull the heating element towards you so that the plastic starts
+                        deforming.</p>
+                    <p>After about 1 minute wait bring the mould towards the plastic and turn on the vacuum pump.</p>
+                    <p>When the part is cooled down (after about 30 seconds) you can take it out of the frame and remove
+                        the mould.</p>
+                    <p>You should be left with your own custom chaing guard! Before moving on to the next step we will
+                        remove the perimiter. This will make it easier to handle.</p>
+                    <p>Use the plate shear to cut the shape out roughly, removing the edges of the sheet.</p>
+                </div>
+
+                <div class="instruction-step">
+                    <h2>Step 3: Cutting a Circle</h2>
+                    <div class="instruction-images">
+                        <img src="../Assets/Chain%20guard%20instructable/Step%203%20-1.png" alt="Step 3 part 1">
+                        <img src="../Assets/Chain%20guard%20instructable/Step%203%20-%202.png" alt="Step 3 part 2">
+                        <img src="../Assets/Chain%20guard%20instructable/Step%203%20-%203.jpg" alt="Step 3 part 3">
+                        <img src="../Assets/Chain%20guard%20instructable/Step%203%20-%204.png" alt="Step 3 part 4">
+                    </div>
+                    <p>The next step is to cut a circle from the middle of the chain guard using a Dremel.</p>
+                    <p>The Dremel is not part of your toolkit so this step happens at a seperate station. First go to
+                        the station.</p>
+                    <p>Drill a 4 mm hole in the middle of the chainguard. Then put your plastic sheet over the mould.
+                        Now take the Dremel that is attached to a platic 'circle cutting jig' and align the hole in the
+                        jig with the hole that you just drilled. Attach the jig with the screw that is provided in your
+                        kit.</p>
+                    <p>You are ready to use the Dremel. Before plugging it in, make sure that the blue button is in the
+                        off-position. Now plug in the Dremel. Turn the slider all the way to the other side and rotate
+                        the Dremel while pushing it down. When you have made a full rotation with the jig you can turn
+                        it off and unplug it.</p>
+                    <p>You have now succesfully made a hole in your chainguard!!</p>
+                    <p>Next remove the screw and release your sheet from the mould.</p>
+                </div>
+
+                <div class="instruction-step">
+                    <h2>Step 4: Cut It Out</h2>
+                    <div class="instruction-images">
+                        <img src="../Assets/Chain%20guard%20instructable/Step%204%20-%201.jpg" alt="Step 4 part 1">
+                        <img src="../Assets/Chain%20guard%20instructable/Step%204%20-%202.png" alt="Step 4 part 2">
+                        <img src="../Assets/Chain%20guard%20instructable/Step%204%20-%203.png" alt="Step 4 part 3">
+                        <img src="../Assets/Chain%20guard%20instructable/Step%204%20-%204.png" alt="Step 4 part 4">
+                        <img src="../Assets/Chain%20guard%20instructable/Step%204%20-%205.png" alt="Step 4 part 5">
+                        <img src="../Assets/Chain%20guard%20instructable/Step%204%20-%206.png" alt="Step 4 part 6">
+                    </div>
+                    <p>Now you can take the plate scissors from your toolbox and cut out the part following the contours
+                        of the chainguard. Make sure to remove the flat piece at the back as well. I've found that by
+                        making a few cuts along the edge and breaking them by hand is the easiest way to remove this
+                        part.</p>
+                    <p>At the end you can also use a piece of sandpaper to clean up the edges.</p>
+                </div>
+
+                <div class="instruction-step">
+                    <h2>Step 5: Attach It to the Bike</h2>
+                    <div class="instruction-images">
+                        <img src="../Assets/Chain%20guard%20instructable/Step%205%20-1.jpg" alt="Step 5 part 1">
+                        <img src="../Assets/Chain%20guard%20instructable/Step%205%20-%202.jpg" alt="Step 5 part 2">
+                        <img src="../Assets/Chain%20guard%20instructable/Step%205%20-%203.jpg" alt="Step 5 part 3">
+                        <img src="../Assets/Chain%20guard%20instructable/Step%205%20-%204.jpg" alt="Step 5 part 4">
+                    </div>
+                    <p>In this step, you will attach it to the bike. This requires you to install the bracket first.
+                        There are two types of brackets. One is the slim design, which sits closer to the frame, and the
+                        adjustable design. Ask the instructor for help with choosing the right bracket.</p>
+                    <p>For both brackets, the final position is the same. The right side of the bracket shouldn't cover
+                        the chain sprocket if you look from the front, and when looking from above, the face of the
+                        bracket should sit between the chain sprocket and crank.</p>
+                    <p>You attach the bracket with the help of four screws and the allen wrench. Place the piece with
+                        the rubber on the back of the frame tube. Then hold the other parts in front of it and insert
+                        the screw. Make sure to tighten the screws evenly and don't use too much pressure.</p>
+                    <p>The next step is to mark the location of the holes. Put your chain guard over the pedals and hold
+                        it in the right position. Now use the scribe and make a small mark through the holes in the
+                        bracket.</p>
+                    <p>Take the chainguard off and align the marks that you just made. Using the small jig, you can now
+                        transfer the location of the holes using the marking jig. Then take the drill with the 14 mm
+                        (forstner) drill and drill out the holes. You can do this on the workbench, but hold another
+                        piece of wood underneath it.</p>
+                    <p>Then take your file and change the shape of the hole so that the turning nobs can fit through the
+                        hole. Making a cutout on the top and the bottom of each hole.</p>
+                    <p>Now insert the two nobs and take any key and attach the chain guard to the bike by inserting both
+                        the knobs and turning them to the right.</p>
+                </div>
+
+                <div class="instruction-step">
+                    <h2>Step 6: Adjustment</h2>
+                    <p>If you cannot turn the pedals without touching the chainguard you need to adjust the bracket.
+                        This is different for the two bracket designs:</p>
+                    <h3>Slim bracket</h3>
+                    <p>You can adjust the distance from the bike by adding small washers in between the two parts of the
+                        bracket. Remove the two screws with the other allen wrench and place 1 or more washers over
+                        screw. Now put it back together and tighten it.</p>
+                    <h3>Adjustable bracket</h3>
+                    <p>You can adjust this bracket by loosening the screws and moving the wedge shaped piece left or
+                        right. This moves the bracket further away, or closer to the bike respectively.</p>
+                </div>
+
+                <div class="instruction-step">
+                    <h2>Step 7: Customize</h2>
+                    <p>Now that you have made your chainguard you can make it more unique. There are stickers and
+                        waterproof markers if you want to customize it even further.</p>
+                </div>
+
+                <div class="instruction-step">
+                    <h2>Step 8: Be Proud!</h2>
+                    <p>Thank you for joining the workshop! I hope you had a great time and that you have found a new
+                        form of appreciation for your bike. :)</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Fullscreen Image Modal -->
+    <div id="image-modal" class="image-modal">
+        <img id="modal-img" src="" alt="Fullscreen view">
+    </div>
+
+    <footer class="footer-note">
+        UpKeep bicycles is a community initiative for longer bike life.
+    </footer>
+
+    <script type="module" src="../scripts/nav.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('image-modal');
+            const modalImg = document.getElementById('modal-img');
+            const images = document.querySelectorAll('.instruction-images img');
+
+            images.forEach(img => {
+                img.addEventListener('click', () => {
+                    modalImg.src = img.src;
+                    modal.classList.add('is-open');
+                });
+            });
+
+            modal.addEventListener('click', () => {
+                modal.classList.remove('is-open');
+            });
+        });
+    </script>
+</body>
+
+</html>

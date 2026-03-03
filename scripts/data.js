@@ -149,8 +149,8 @@ export const PARTS = [
   {
     slug: "chain-guard",
     name: "Chain Guard",
-    photo: "Assets/bike_without_background.png",
-    photoPosition: "45% 58%",
+    photo: "Assets/Chain guard main picture.jpg",
+    photoPosition: "center",
     heroTitle: "A clean drivetrain keeps bikes in circulation.",
     summary:
       "Create a chain guard that protects clothes, reduces dirt, and keeps the bike feeling cared for.",
