@@ -83,8 +83,8 @@ export const PARTS = [
   {
     slug: "saddle",
     name: "Saddle",
-    photo: "Assets/bike_without_background.png",
-    photoPosition: "38% 27%",
+    photo: "Assets/Saddle_markus-winkler.jpg",
+    photoPosition: "center",
     heroTitle: "Comfort keeps your bike in your life.",
     summary:
       "Build a saddle shell and cover that matches your riding posture, so your bike feels inviting every day.",
@@ -105,7 +105,7 @@ export const PARTS = [
   {
     slug: "bell",
     name: "Bell",
-    photo: "Assets/bike_without_background.png",
+    photo: "Assets/Bell%20under%20construction.png",
     photoPosition: "60% 20%",
     heroTitle: "Make yourself heard with a beautiful tone.",
     summary:
@@ -119,8 +119,8 @@ export const PARTS = [
   {
     slug: "handlebars",
     name: "Handlebars",
-    photo: "Assets/bike_without_background.png",
-    photoPosition: "63% 18%",
+    photo: "Assets/Handlebars_morgane-le-breton.jpg",
+    photoPosition: "center",
     heroTitle: "Control and confidence start at your hands.",
     summary:
       "Tune reach, width, and grip geometry with open-source handlebar options for city and utility riding.",
@@ -163,7 +163,7 @@ export const PARTS = [
   {
     slug: "fender",
     name: "Fender",
-    photo: "Assets/bike_without_background.png",
+    photo: "Assets/Fender%20under%20construction.png",
     photoPosition: "20% 50%",
     heroTitle: "Dry rides make daily cycling realistic.",
     summary:
@@ -177,8 +177,8 @@ export const PARTS = [
   {
     slug: "lights",
     name: "Lights",
-    photo: "Assets/bike_without_background.png",
-    photoPosition: "73% 40%",
+    photo: "Assets/Light_waldemar-brandt.jpg",
+    photoPosition: "center",
     heroTitle: "Visibility is a part you can build too.",
     summary:
       "Use open housings and mounts to upgrade your bike lights while keeping parts serviceable.",
@@ -199,8 +199,8 @@ export const PARTS = [
   {
     slug: "pedals",
     name: "Pedals",
-    photo: "Assets/bike_without_background.png",
-    photoPosition: "47% 66%",
+    photo: "Assets/Pedal_shawn-rain.jpg",
+    photoPosition: "center",
     heroTitle: "Secure footing changes how a bike feels.",
     summary:
       "Prototype pedal bodies and traction surfaces that match your riding style.",
@@ -221,8 +221,8 @@ export const PARTS = [
   {
     slug: "rack",
     name: "Rack",
-    photo: "Assets/bike_without_background.png",
-    photoPosition: "19% 35%",
+    photo: "Assets/Rack_johnny-ho.jpg",
+    photoPosition: "center",
     heroTitle: "Carrying capacity keeps bikes useful.",
     summary:
       "Make front or rear rack modules for groceries, work gear, and everyday utility.",

@@ -13,6 +13,14 @@ function renderPartPreview() {
     card.className = "part-tile";
     card.href = `parts/${part.slug}.html`;
 
+    if (["chain-guard", "bell", "fender"].includes(part.slug)) {
+      card.style.outline = "3px solid green";
+      card.style.outlineOffset = "-3px";
+    } else {
+      card.style.opacity = "0.8";
+      card.style.filter = "grayscale(50%)";
+    }
+
     const title = document.createElement("h3");
     title.textContent = part.name;
     const text = document.createElement("p");
