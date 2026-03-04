@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community | UpKeep Bicycles</title>
+    <meta name="description"
+        content="UpKeep community: Find each other, work together on developing parts and workshops.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;700&family=Quicksand:wght@500;700&family=Work+Sans:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header class="site-header community-header">
+        <nav class="top-nav" aria-label="Main navigation">
+            <a class="logo-link" href="index.html" aria-label="Go to UpKeep home page">
+                <img src="Assets/UpKeep community.png" alt="UpKeep community logo">
+            </a>
+            <div class="nav-menu" data-nav-menu>
+                <a class="btn btn-secondary community-return-btn" href="index.html">Return to main website</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section pt-0">
+            <div class="page-shell">
+                <div class="tab-container">
+                    <div class="tab-nav">
+                        <button class="tab-btn active" data-tab="updates">Updates</button>
+                        <button class="tab-btn" data-tab="develop">Develop</button>
+                        <button class="tab-btn" data-tab="questions">Questions</button>
+                    </div>
+
+                    <!-- Updates Tab -->
+                    <div class="tab-content active" id="tab-updates">
+                        <p class="section-subtitle" style="margin-bottom: 24px;">Read what the community is working on.
+                        </p>
+                        <div class="community-grid">
+                            <article class="card community-update-card">
+                                <a href="parts/bell-development.html">
+                                    <div class="image-wrapper">
+                                        <img src="Assets/Bell under construction.png" alt="Bell under construction">
+                                    </div>
+                                    <h3>Bell</h3>
+                                </a>
+                            </article>
+                            <article class="card community-update-card">
+                                <a href="parts/fender-development.html">
+                                    <div class="image-wrapper">
+                                        <img src="Assets/Fender under construction.png" alt="Fender under construction">
+                                    </div>
+                                    <h3>Fenders</h3>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Develop Tab -->
+                    <div class="tab-content" id="tab-develop">
+                        <p class="section-subtitle" style="margin-bottom: 24px;">We haven't started development on these
+                            parts yet. If you want to help us take care of bicycles please start a thread.</p>
+                        <div class="parts-grid community-develop-grid">
+                            <div class="part-tile greyed-out-part">
+                                <img src="Assets/Handlebars_morgane-le-breton.jpg" alt="Handlebars" class="part-photo">
+                                <h3>Handlebars</h3>
+                            </div>
+                            <div class="part-tile greyed-out-part">
+                                <img src="Assets/Rack_johnny-ho.jpg" alt="Rack" class="part-photo">
+                                <h3>Rack</h3>
+                            </div>
+                            <div class="part-tile greyed-out-part">
+                                <img src="Assets/Saddle_markus-winkler.jpg" alt="Saddle" class="part-photo">
+                                <h3>Saddle</h3>
+                            </div>
+                            <div class="part-tile greyed-out-part">
+                                <img src="Assets/Pedal_shawn-rain.jpg" alt="Pedals" class="part-photo">
+                                <h3>Pedals</h3>
+                            </div>
+                            <div class="part-tile greyed-out-part">
+                                <img src="Assets/Light_waldemar-brandt.jpg" alt="Lights" class="part-photo">
+                                <h3>Lights</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Questions Tab -->
+                    <div class="tab-content" id="tab-questions">
+                        <div class="questions-header">
+                            <p class="section-subtitle" style="margin-bottom: 0;">Add a page where people can ask
+                                questions and start a thread.</p>
+                            <div class="questions-controls">
+                                <input type="search" placeholder="Search questions..." class="search-input">
+                                <select class="filter-select">
+                                    <option value="newest">Newest</option>
+                                    <option value="most-comments">Most comments</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="questions-list">
+                            <a href="question-detail.html" class="question-card">
+                                <div class="question-main">
+                                    <h3>How do I test the bell resonance without a fully printed part?</h3>
+                                    <div class="question-meta">
+                                        <span class="author">Alex R.</span>
+                                        <span class="responses">0 responses</span>
+                                    </div>
+                                </div>
+                                <div class="question-rating">
+                                    <span class="rating-val">12</span>
+                                    <span class="rating-label">Useful</span>
+                                </div>
+                            </a>
+
+                            <a href="question-detail.html" class="question-card">
+                                <div class="question-main">
+                                    <h3>What filament is best for outdoor fenders?</h3>
+                                    <div class="question-meta">
+                                        <span class="author">Jamie L.</span>
+                                        <span class="responses">0 responses</span>
+                                    </div>
+                                </div>
+                                <div class="question-rating">
+                                    <span class="rating-val">8</span>
+                                    <span class="rating-label">Useful</span>
+                                </div>
+                            </a>
+
+                            <a href="question-detail.html" class="question-card">
+                                <div class="question-main">
+                                    <h3>Is there a template for a rear rack that fits a 28" wheel?</h3>
+                                    <div class="question-meta">
+                                        <span class="author">Sam K.</span>
+                                        <span class="responses">0 responses</span>
+                                    </div>
+                                </div>
+                                <div class="question-rating">
+                                    <span class="rating-val">5</span>
+                                    <span class="rating-label">Useful</span>
+                                </div>
+                            </a>
+
+                            <a href="question-detail.html" class="question-card">
+                                <div class="question-main">
+                                    <h3>Can we use recycled plastic for the saddle base?</h3>
+                                    <div class="question-meta">
+                                        <span class="author">Casey M.</span>
+                                        <span class="responses">0 responses</span>
+                                    </div>
+                                </div>
+                                <div class="question-rating">
+                                    <span class="rating-val">15</span>
+                                    <span class="rating-label">Useful</span>
+                                </div>
+                            </a>
+
+                            <a href="question-detail.html" class="question-card">
+                                <div class="question-main">
+                                    <h3>Ideas for modular pedal attachments?</h3>
+                                    <div class="question-meta">
+                                        <span class="author">Jordan T.</span>
+                                        <span class="responses">0 responses</span>
+                                    </div>
+                                </div>
+                                <div class="question-rating">
+                                    <span class="rating-val">3</span>
+                                    <span class="rating-label">Useful</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="page-shell banner-cta">
+                <h2 class="section-title">Want to host a workshop?</h2>
+                <p class="section-subtitle">
+                    Register to start a workshop and help your local community take care of their bicycles.
+                </p>
+                <div class="cta-row" style="justify-content: center;">
+                    <a class="btn btn-primary" href="register.html">Register to start a workshop</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-note">
+        UpKeep bicycles is a community initiative for longer bike life.
+    </footer>
+
+    <script>
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+                btn.classList.add('active');
+                document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

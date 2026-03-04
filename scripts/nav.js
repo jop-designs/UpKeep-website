@@ -81,9 +81,10 @@ function initFooter() {
         <ul>
           <li><a href="${prefix}index.html">Home</a></li>
           <li><a href="${prefix}make-a-part.html">Make a Part</a></li>
+          <li><a href="${prefix}make-a-part.html#parts-preview-grid">Parts Library</a></li>
           <li><a href="${prefix}host-a-workshop.html">Host a Workshop</a></li>
+          <li><a href="${prefix}community.html">Community</a></li>
           <li><a href="${prefix}about.html">About</a></li>
-          <li><a href="${prefix}parts/saddle.html">Parts Library</a></li>
         </ul>
       </nav>
       <section class="footer-meta">
