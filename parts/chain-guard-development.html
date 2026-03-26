@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chain Guard Development | UpKeep Bicycles</title>
+    <meta name="description" content="Development updates for the DIY open source bicycle chain guard.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;700&family=Quicksand:wght@500;700&family=Work+Sans:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="top-nav" aria-label="Main navigation">
+            <a class="logo-link" href="../index.html" aria-label="Go to UpKeep home page">
+                <img src="../Assets/Logo wit.png" alt="UpKeep bicycles logo">
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-nav-toggle>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M4 7h16M4 12h16M4 17h16" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="nav-menu" data-nav-menu>
+                <a class="nav-link" href="../make-a-part.html" data-nav-link>Make a Part</a>
+                <a class="nav-link" href="../host-a-workshop.html" data-nav-link>Host a Workshop</a>
+                <a class="nav-link" href="../about.html" data-nav-link>About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="part-hero page-shell">
+            <p class="eyebrow">Development Updates</p>
+            <h1 class="section-title">Chain Guard</h1>
+            <p class="section-subtitle">Follow along as we iterate on the ultimate open-source bicycle chain guard.</p>
+            <a class="small-link" href="chain-guard.html">Back to Chain Guard page</a>
+        </section>
+
+        <section class="section" style="padding-top: 18px;">
+            <div class="page-shell">
+                <article class="part-content-card">
+                    <h2>Technical Development: Choosing a chain guard design</h2>
+                    <p class="subtitle" style="color: #666; font-size: 0.9rem; margin-top: -0.5rem; margin-bottom: 1.5rem;">March 26, 2026</p>
+
+                    <h3>Choosing a chain guard design</h3>
+                    <p>There are many different types of chain guards from completely closed to almost no protection at all. We chose a <strong>partially enclosed chain guard</strong> because it offers distinct advantages: it doesn't need to be removed to put the chain back on or when removing the wheel, it prevents the chain from touching the guard as it ages, and it makes maintenance easy. While exposed chains collect dirt faster, product care perspective suggests that visibly dirty chains encourage users to understand and care for their bicycles.</p>
+
+                    <h3>Vacuum forming a chain guard</h3>
+                    <p>To make the part accessible and authentic, we opted for <strong>vacuum forming</strong> using thermoplastics over a one-sided, hand-made MDF mould. This replicates the feel of normal city bike guards. The first prototypes were made using 1 and 2 mm polystyrene. We discovered that industrial vacuum forming machines can be intimidating, separating the part from a Vaseline-covered mould is messy, and 2mm plastic feels much more like a real premium product than a 1mm flimsy sheet. Additionally, cutting out the part and drilling holes was trickier than expected.</p>
+
+                    <h3>Chain guard prototype installed on a bicycle</h3>
+                    <p>After vacuum forming, the chain guard was installed on the reference bike. To mount the guard universally, we designed a 3D-printed bracket attached to the bottom stay instead of the bottom bracket for easier installation. The guard attaches with two small 3D-printed removable knobs, allowing users to detach it easily with a coin or key.</p>
+
+                    <img src="../Assets/Chain guard prototype installed on a bicycle.jpg" alt="Chain guard prototype installed on a bicycle" class="part-photo" style="margin-top: 1rem; margin-bottom: 1rem; border-radius: 8px; height: auto; object-fit: contain;">
+
+                    <h3>Making the process more pleasurable</h3>
+                    <p>Two pilot user tests highlighted several pain points: participants found cutting the cutout with a Dremel scary because the part moved around, marked hole positions were difficult, rigid mounting brackets lacked enough adjustment for race bikes, and the white plastic got visibly dirty from greasy chains during installation.</p>
+                    <p>To improve the process, we created a dedicated fixture for routing the central hole, supplied specialized toolsets directly to the user, and simplified customization. Crucially, vacuum forming was the most enjoyable part of the process, meaning every individual should get to experience pulling the plastic themselves.</p>
+
+                    <h3>Customization & 3D Printed Bracket</h3>
+                    <p>To deepen the emotional connection with the product, we explored using laser-engraved rings on the mould to leave small embossed features or personal names directly on the chain guard's surface. For additional graphics, permanent or paint markers and stickers were selected over traditional paint due to unviable drying times.</p>
+                    <p>The 3D-printed bracket also required an update: we introduced a wedge design to allow users to move the wedge left and right to adjust the critical distance between the chain guard, the crank, and the bicycle frame. This ensures it doesn't touch the sprocket and fits roughly 90 percent of normal city bikes.</p>
+
+                    <h3>Plastic selection</h3>
+                    <p>Initially, prototyping used Polystyrene and PETG since they were readily available for rapid prototyping. However, a durable chain guard must withstand temperature changes and UV radiation.</p>
+
+                    <img src="../Assets/Plastic types table_chain guard.png" alt="Plastic types table for chain guard" class="part-photo" style="margin-top: 1rem; margin-bottom: 1rem; border-radius: 8px; height: auto; object-fit: contain;">
+                    
+                    <p>Because Polystyrene degrades under UV light and PVC releases dangerous fumes when heated, Acrylic (PMMA) or PETG proved to be the only truly suitable options for DIY vacuum forming.</p>
+
+                    <hr style="margin: 3rem 0; border: none; border-top: 1px solid var(--border-color);">
+
+                    <h3>Leave Feedback</h3>
+                    <p style="margin-bottom: 1rem;">Have ideas for the chain guard design or alternative materials? Let us know!</p>
+                    <form onsubmit="event.preventDefault(); alert('Feedback submitted!'); this.reset();"
+                        style="display: flex; flex-direction: column; gap: 1rem; max-width: 500px;">
+                        <textarea name="comment" rows="4" placeholder="Share your thoughts or ideas..." required
+                            style="padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px; font-family: inherit; resize: vertical;"></textarea>
+                        <button type="submit" class="button" style="align-self: flex-start;">Post Comment</button>
+                    </form>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-note">
+        UpKeep bicycles is a community initiative for longer bike life.
+    </footer>
+
+    <script type="module" src="../scripts/nav.js"></script>
+</body>
+
+</html>
