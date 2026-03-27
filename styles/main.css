@@ -365,24 +365,48 @@ main {
 
 .problem-grid {
   display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  align-items: stretch;
+}
+
+.problem-image {
+  border-radius: 16px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.problem-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .problem-stat {
-  padding: 26px 20px;
+  padding: 40px;
   border-radius: var(--radius-card);
   background: var(--color-white);
   border: 1px solid rgba(24, 34, 44, 0.1);
   box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .problem-stat strong {
   display: block;
   font-family: var(--font-title);
-  font-size: clamp(1.7rem, 3.1vw, 2.5rem);
-  margin-bottom: 8px;
-  color: #4caf50;
+  font-size: clamp(3.5rem, 6vw, 5.5rem);
+  line-height: 1.1;
+  margin-bottom: 16px;
+  color: var(--color-orange);
+}
+
+.problem-stat p {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: var(--color-ink);
 }
 
 .dual-action {
@@ -1011,6 +1035,8 @@ main {
   display: none;
 }
 
+
+
 @media (max-width: 1024px) {
   .parts-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1607,4 +1633,41 @@ main {
   .carousel-controls {
     padding: 16px 20px;
   }
+}
+
+/* Fictional Map Styling */
+.fictional-map-container .leaflet-pane,
+.fictional-map-container .leaflet-control-container {
+  filter: grayscale(100%) blur(4px);
+  transition: filter 0.3s ease;
+}
+
+.fictional-map-container:hover .leaflet-pane,
+.fictional-map-container:hover .leaflet-control-container {
+  filter: grayscale(0%) blur(0px);
+}
+
+.fictional-map-container::after {
+  content: "Fictional workshop locations are used to illustrate the concept.";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-family: var(--font-title);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-ink);
+  box-shadow: var(--shadow-soft);
+  pointer-events: none;
+  z-index: 2000;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.fictional-map-container:hover::after {
+  opacity: 0;
 }

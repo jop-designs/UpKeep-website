@@ -21,6 +21,8 @@ export function initWorkshopMap({ mapElementId, workshops, onSelect, initialId }
     };
   }
 
+  mapElement.classList.add("fictional-map-container");
+
   const map = L.map(mapElement, {
     scrollWheelZoom: false
   });

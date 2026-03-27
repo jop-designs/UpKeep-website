@@ -33,7 +33,7 @@ export const WORKSHOPS = [
     lng: 4.47917,
     address: "Katendrechtse Lagedijk 412, 3082 GR Rotterdam",
     website: "https://example.org/dockside-bicycle-commons",
-    image: "Assets/stock/workshop-wheel.jpg",
+    image: "Assets/Fietswerkplaats_Rotterdam.jpg",
     specialties: ["rack", "lights", "pedals"],
     description:
       "Known for durable all-weather commuter parts built from recycled aluminum and reclaimed plastics."
@@ -46,7 +46,7 @@ export const WORKSHOPS = [
     lng: 5.4697,
     address: "Torenallee 48, 5617 BD Eindhoven",
     website: "https://example.org/strijp-s-bike-shed",
-    image: "Assets/stock/workshop-handlebar.jpg",
+    image: "Assets/Makerspace_Eindhoven.webp",
     specialties: ["chain-guard", "lights", "handlebars"],
     description:
       "A fabrication-focused studio that helps beginners turn open files into polished, practical bike parts."
